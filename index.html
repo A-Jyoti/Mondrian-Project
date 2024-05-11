@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    
+    */
+
+    .flex-container {
+      height : 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0px;
+    }
+
+    .container {
+      height: 748px;
+      width: 748px;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px auto 20px;
+      gap: 9px;
+      background-color: black;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .container > *{
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .red {
+      background-color: #E72F24;
+    }
+
+    .color-w{
+      background-color: #F0F1EC;
+    }
+    .white1{
+      grid-area: 1/ 2/ 1/ 5;
+      }
+
+    .white2 {
+      grid-area: 2/ 1/ 4/ 2;
+    }
+    
+    .white3 {
+      grid-area: 2/ 2/ 4/ 4;
+    }
+
+    .blue {
+      background-color: #004592;
+      border-bottom: 10px solid black;
+    }
+
+    .white4{
+      grid-area: 3/4/5/5;
+    }
+
+    .white5 {
+      grid-area: 4/1/5/2;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+    }
+
+    .black {
+      background-color: #232629;
+    }
+  </style>
+</head>
+
+<body class = "flex-container">
+  <!-- Write your HTML here -->
+  <div class = "container">
+    <div class = "red"></div>
+    <div class="color-w white1"></div>
+    <div class="color-w white2"></div>
+    <div class="color-w white3"></div>
+    <div class="blue"></div>
+    <!-- <div class="color-w"></div> -->
+    <div class="color-w white4"></div>
+    <div class ="color-w white5"></div>
+    <div class = "yellow"></div>
+    <div class="black"></div>
+
+  
+    
+  </div>
+</body>
+
+</html>
